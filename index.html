@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <title>Neon Snake 3D</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="hud">
+            <div class="stat">
+                <span class="label" id="hud-score-label">SCORE</span>
+                <span id="score" class="value">000</span>
+            </div>
+            <div class="stat">
+                <span class="label" id="hud-speed-label">SPEED</span>
+                <div class="speed-bar">
+                    <div id="speed-fill"></div>
+                </div>
+            </div>
+        </div>
+        <div id="overlay">
+            <div id="start-screen" class="glass-panel">
+                <h1 id="start-heading"></h1>
+                <p id="start-line-keys"></p>
+                <p id="start-line-boost"></p>
+                <p id="start-line-laser"></p>
+                <p id="start-line-touch" class="mobile-only"></p>
+                <button id="start-btn" type="button"></button>
+            </div>
+            <div id="game-over-screen" class="glass-panel hidden">
+                <h2 id="game-over-heading"></h2>
+                <p id="game-over-score-row"><span id="final-score-plain"></span><span id="final-score" class="accent">0</span></p>
+                <button id="restart-btn" type="button"></button>
+            </div>
+        </div>
+    </div>
+    <script async src="/sdk.js"></script>
+    <script type="module" src="game.bundle.js"></script>
+</body>
+</html>

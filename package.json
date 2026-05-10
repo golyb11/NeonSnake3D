@@ -1,0 +1,22 @@
+{
+  "name": "zmeika",
+  "version": "1.0.0",
+  "description": "",
+  "main": "game.js",
+  "scripts": {
+    "build": "esbuild game.js --bundle --format=esm --target=es2020 --legal-comments=none --outfile=game.bundle.js",
+    "zip:yandex": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts/zip-yandex.ps1",
+    "release:yandex": "npm run build && npm run zip:yandex",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "three": "^0.160.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.0"
+  }
+}
