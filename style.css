@@ -54,7 +54,7 @@ canvas {
     pointer-events: none;
 }
 
-/* HUD Styling */
+
 #hud {
     position: absolute;
     top: 2rem;
@@ -105,7 +105,7 @@ canvas {
     border-radius: 3px;
 }
 
-/* Overlay and Panels */
+
 #overlay {
     position: absolute;
     top: 0;

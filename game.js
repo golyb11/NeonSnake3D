@@ -232,11 +232,11 @@ class Snake {
             return;
         }
         
-        // Clear existing meshes
+
         this.meshSegments.forEach(m => scene.remove(m));
         this.meshSegments = [];
         
-        // Create new meshes
+
         this.body.forEach((pos, i) => {
             const isHead = i === 0;
             const size = isHead ? 0.9 : 0.8;
